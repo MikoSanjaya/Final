@@ -1,0 +1,589 @@
+o<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <title>Hansaplast</title>
+  </head>
+  <body>
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-50 text-[#808088] top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="./index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="./assets/logo.svg" alt="hansalogo" class="w-24 h-10" />
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <div class="flex items-center space-x-7">
+            <div class="flex items-center space-x-2">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/383px-Flag_of_Indonesia.svg.png"
+                alt="indo-flagg"
+                class="w-6 h-6 rounded-full border-gray-600 border-2"
+              />
+              <p>ID</p>
+            </div>
+            <img
+              id="__search-button"
+              src="./assets/search.svg"
+              alt="search"
+              class="w-5 h-5"
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li class="mb-2 md:mb-0">
+              <a
+                class="md:hover:bg-transparent md:hover:text-blue-700"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="mb-2 md:mb-0">
+              <a
+                class="md:hover:bg-transparent md:hover:text-blue-700"
+                href="./biodata.html"
+                >Biodata</a
+              >
+            </li>
+            <li class="mb-2 md:mb-0">
+              <a
+                class="md:hover:bg-transparent md:hover:text-blue-700"
+                href="./contact-us.html"
+                >Contact Us</a
+              >
+            </li>
+            <li class="mb-2 md:mb-0">
+              <a
+                class="md:hover:bg-transparent md:hover:text-blue-700"
+                href="https://fti.unai.edu"
+                >FTI UNAI</a
+              >
+            </li>
+            <li class="mb-2 md:mb-0">
+              <a
+                class="md:hover:bg-transparent md:hover:text-blue-700"
+                href="https://unai.edu"
+                >UNAI WEB</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="my-16">
+      <div
+        id="indicators-carousel"
+        class="relative w-full"
+        data-carousel="slide"
+      >
+        <!-- Carousel wrapper -->
+        <div class="relative overflow-hidden h-[476px]">
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <div
+              class="bg-[#001a72] h-full grid grid-rows-2 md:grid-rows-1 md:grid-cols-2"
+            >
+              <div
+                class="text-white flex justify-start mt-4 md:mt-0 md:justify-center flex-col mx-2 w-4/5 md:w-[55%] md:mx-auto relative space-y-3 md:space-y-6 order-2 md:order-1"
+              >
+                <h2 class="font-bold md:text-4xl text-xl">
+                  Antipseptik Pembersih Luka Tanpa Rasa Perih
+                </h2>
+                <p class="md:text-sm text-xs">
+                  Hansaplast Antiseptik Pembersih Luka merupakan antiseptik
+                  dengan kandingan PHMB ideal yang memberikan rasa nyaman.
+                </p>
+                <button
+                  class="bg-white max-w-max text-sm text-[#001a72] hover:bg-red-600 hover:text-white font-semibold px-6 py-3"
+                >
+                  Lihat Selengkapnya
+                </button>
+                <p class="absolute bottom-2 text-xs">
+                  * Dibandingkan dengan antiseptik lainnya
+                </p>
+              </div>
+              <img
+                src="https://images-as.eucerin.com/~/media/hansaplast/local/id/home%20-%20splitted%20stage%20-%202023/antiseptik%20pembersih%20luka%20-%20splitted%20stage%20mobile%20png.webp?rx=0&ry=0&rw=1916&rh=960&mw=1200&hash=D6D4E19847B0E0C3A8A067C27CD796D5"
+                alt="hansaplast-koyo-anjasss"
+                class="h-full w-full object-cover order-1 md:order-2"
+              />
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="bg-[#001a72] h-full grid grid-rows-2 md:grid-rows-1 md:grid-cols-2"
+            >
+              <div
+                class="text-white flex justify-start mt-4 md:mt-0 md:justify-center flex-col mx-2 w-4/5 md:w-[55%] md:mx-auto relative space-y-3 md:space-y-6 order-2 md:order-1"
+              >
+                <h2 class="font-bold md:text-4xl text-xl">
+                  Sembuhkan 2x lebih cepat*
+                </h2>
+                <p class="md:text-sm text-xs">
+                  Hansaplast Salep Luka merupakan salep serbaguna untuk
+                  perawatan luka dan kulit yang rusak.
+                </p>
+                <button
+                  class="bg-white max-w-max text-sm text-[#001a72] hover:bg-red-600 hover:text-white font-semibold px-6 py-3"
+                >
+                  Lihat Selengkapnya
+                </button>
+                <p class="absolute bottom-2 text-xs">
+                  * Dibandingkan dengan luka yang tidak dirawat
+                </p>
+              </div>
+              <img
+                src="https://images-as.eucerin.com/~/media/hansaplast/local/id/home%20-%20splitted%20stage%20-%202023/salep%20luka%20-%20splitted%20stage%20mobile%20png.webp?rx=0&ry=0&rw=1917&rh=960&mw=1200&hash=ADC50AA03F8C52CECED3692FC37A9AD6"
+                alt="hansaplast-koyo-anjasss"
+                class="h-full w-full object-cover order-1 md:order-2"
+              />
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="bg-[#001a72] h-full grid grid-rows-2 md:grid-rows-1 md:grid-cols-2"
+            >
+              <div
+                class="text-white flex justify-start mt-4 md:mt-0 md:justify-center flex-col mx-2 w-4/5 md:w-[55%] md:mx-auto relative space-y-3 md:space-y-6 order-2 md:order-1"
+              >
+                <h2 class="font-bold md:text-4xl text-xl">
+                  Kenyamanan Maksimal Untuk Luka Besar
+                </h2>
+                <p class="md:text-sm text-xs">
+                  Melindungi luka dari kotoran dan bakteri, untuk luka yang
+                  lebih besar & pasca operasi.
+                </p>
+                <button
+                  class="bg-white max-w-max text-sm text-[#001a72] hover:bg-red-600 hover:text-white font-semibold px-6 py-3"
+                >
+                  Lihat Selengkapnya
+                </button>
+                <p class="absolute bottom-2 text-xs">
+                  * 100% kedap air dan ramah di kulit.
+                </p>
+              </div>
+              <img
+                src="https://images-as.eucerin.com/~/media/hansaplast/local/id/new%20banner%202023/frame%208494.webp?rx=0&ry=0&rw=1917&rh=960&mw=1200&hash=6A2F88942FFDA44F391FFCFFEC294FCB"
+                alt="hansaplast-koyo-anjasss"
+                class="h-full w-full object-cover order-1 md:order-2"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+    <section
+      class="px-4 md:px-0 mt-20 flex justify-center items-center flex-col"
+    >
+      <br class="hidden md:block" />
+      <br class="hidden md:block" />
+      <h2 class="font-bold text-3xl text-[#001a72]">
+        Selamat datang di Hansaplast
+      </h2>
+      <br />
+      <p class="text-sm max-w-lg text-[#808088] text-justify">
+        Jika Anda mencari berbagai produk pertolongan pertama seperti
+        <span class="underline hover:text-[#001a72] cursor-pointer"
+          >Antiseptik Pembersih Luka</span
+        >,
+        <span class="underline hover:text-[#001a72] cursor-pointer"
+          >Plester Luka</span
+        >,
+        <span class="underline hover:text-[#001a72] cursor-pointer"
+          >Salep Luka</span
+        >
+        atau
+        <span class="underline hover:text-[#001a72] cursor-pointer"
+          >Koyo Pereda Nyeri</span
+        >, maka Anda berada di tempat yang tepat. Hansaplast adalah ahlinya
+        pertolongan pertama! Di sini, Anda akan menemukan produk-produk inovatif
+        dan artikel berisikan tips and trik untuk membuat perawatan diri menjadi
+        lebih mudah dan efektif.
+      </p>
+    </section>
+    <section class="max-w-screen-xl mx-auto my-20">
+      <h2
+        class="px-4 md:px-0 text-2xl font-semibold text-[#001a72] border-b mb-10 pb-2"
+      >
+        Produk Baru
+      </h2>
+      <div
+        id="__new-pr-group"
+        class="flex md:flex-row flex-col justify-center space-y-4 md:space-y-0 md:justify-between items-center"
+      >
+        <!-- card looping in js fc newProductContainer -->
+      </div>
+      <div class="flex justify-center mt-10">
+        <button
+          class="bg-[#e0e0e4] text-sm text-[#001a72] font-semibold px-8 py-4"
+        >
+          Lihat Product Hansaplast
+        </button>
+      </div>
+    </section>
+    <section class="max-w-screen-xl mx-auto my-20">
+      <h2
+        class="px-4 md:px-0 text-2xl font-semibold text-[#001a72] border-b mb-10 pb-2"
+      >
+        Jelajahi Produk
+      </h2>
+      <div
+        id="__discover-pr-group"
+        class="flex md:flex-row flex-col justify-center space-y-4 md:space-y-0 md:justify-between items-center"
+      >
+        <!-- card looping in js -->
+      </div>
+      <div class="flex justify-center mt-10">
+        <button
+          class="bg-[#e0e0e4] text-sm text-[#001a72] font-semibold px-8 py-4"
+        >
+          Lihat Product Hansaplast
+        </button>
+      </div>
+    </section>
+    <section class="bg-[#f7f7f9] py-2">
+      <div class="max-w-screen-xl mx-auto my-16">
+        <h2
+          class="px-4 md:px-0 text-2xl font-semibold text-[#001a72] text-center mb-10 pb-2"
+        >
+          Artikel
+        </h2>
+        <div
+          id="__article-group"
+          class="flex md:flex-row flex-col justify-center space-y-4 md:space-y-0 md:justify-between items-center"
+        >
+          <!-- card looping in js -->
+        </div>
+      </div>
+    </section>
+    <section
+      class="max-w-screen-xl mx-4 md:mx-auto mt-16 mb-2 flex flex-col items-center"
+    >
+      <img
+        class="w-24 h-24"
+        src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/hp_purpose_id_100.webp?la=id-ID&h=200&w=200&mw=200&hash=BADD511B41F555B40F6E235C9D91F4A0"
+        alt="footer-mainlogo"
+      />
+      <div class="flex space-x-5 mt-5">
+        <img class="w-5 h-w-5" src="./assets/youtube.svg" alt="youtube-logo" />
+        <img class="w-5 h-w-5" src="./assets/ig.svg" alt="youtube-logo" />
+        <img class="w-5 h-w-5" src="./assets/fb.svg" alt="youtube-logo" />
+        <img class="w-5 h-w-5" src="./assets/tt.svg" alt="youtube-logo" />
+        <img class="w-5 h-w-5" src="./assets/wa.svg" alt="youtube-logo" />
+      </div>
+      <div class="text-[10px] font-medium mt-5 space-x-2 text-[#808088]">
+        <a class="underline" href="https://www.hansaplast.id/pages/kontak"
+          >KONTAK</a
+        >
+        <a
+          class="underline"
+          href="https://www.hansaplast.id/pages/persyaratan-penggunaan"
+          >PERSYARATAN PENGGUNAAN</a
+        >
+        <a class="underline" href="https://www.hansaplast.id/pages/jejak"
+          >JEJAK</a
+        >
+        <a
+          class="underline"
+          href="https://www.hansaplast.id/pages/kebijakan-privasi"
+          >KEBIJAKAN PRIVASI</a
+        >
+      </div>
+      <div
+        class="text-xs font-medium text-justify my-5 space-y-2 text-[#808088]"
+      >
+        <p>
+          Selalu kunjungi dokter jika Anda menderita luka dalam, pendarahan
+          hebat, atau menunjukkan gejala infeksi seperti kulit kemerahan,
+          bengkak, atau terasa hangat. Perlu diingat bahwa meskipun telah
+          disusun dengan baik, tips-tips ini tidak bermaksud untuk mengganti
+          saran atau tindakan medis. Jika Anda memiliki atau merasa ada masalah
+          kesehatan, konsultasikan kepada dokter dan ikuti saran medis tanpa
+          mempedulikan apa yang sudah Anda pelajari dari situs web ini. Selalu
+          baca dan ikuti instruksi atau brosur produk kami dengan baik.
+        </p>
+        <p>
+          Untuk informasi lebih lanjut, silakan hubungi kami melalui Nomor Bebas
+          Pulsa: 0800-11-64832.
+        </p>
+        <p>
+          Perlu diingat bahwa meskipun telah disusun dengan baik, tips-tips ini
+          tidak bermaksud untuk mengganti saran atau tindakan medis. Jika Anda
+          memiliki atau merasa ada masalah kesehatan, konsultasikan kepada
+          dokter dan ikuti saran medis tanpa mempedulikan apa yang sudah Anda
+          pelajari dari situs web ini. Selalu baca dan ikuti instruksi atau
+          brosur produk kami dengan baik. Untuk informasi lebih lanjut, silakan
+          hubungi kami melalui CustomerCare-id@Beiersdorf.com
+        </p>
+        <hr />
+        <div class="flex justify-between items-center">
+          <img
+            src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/beiersdorf_logo_blue_rgb-96x16.webp?la=id-ID&h=16&w=96&mw=155&hash=F69B8E6D422526C1548F3CD46442A093"
+            alt="footer-sc-images"
+          />
+          <p>COPYRIGHT 2023 BEIERSDORF</p>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const dataNewProduct = [
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/pdp%202023/pdp%20thumbnail%202023/22%20sensitive%20xl.webp?rx=-2147483648&ry=0&rw=-2147483648&rh=0&mw=-2147483648&hash=BB786F77EF3BD3F5FEE5D98AB5F39BE1",
+        name: "Sensitive XL 6x7cm 5 Lembar",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/pdp%202023/pdp%20thumbnail%202023/23%20sensitive%20xxl.webp?rx=-2147483648&ry=0&rw=-2147483648&rh=0&mw=-2147483648&hash=A7A01E8C1B25F2BB5F221EA0ADB28AB9",
+        name: "Sensitive XXL 8x10cm 5 Lembar",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/pdp%202023/pdp%20thumbnail%202023/20%20aqua%20protect%203xl.webp?rx=-2147483648&ry=0&rw=-2147483648&rh=0&mw=-2147483648&hash=3E20194650E73240DADD431D26C17DDB",
+        name: "Aqua Protect 3XL 10x15cm 5 Lembar",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/pdp%202023/pdp%20thumbnail%202023/21%20aqua%20protect%204xl.webp?rx=-2147483648&ry=0&rw=-2147483648&rh=0&mw=-2147483648&hash=7CB42BD8D2C3368B642EBF07E3C5374F",
+        name: "Aqua Protect 4XL 10x20cm 5 Lembar",
+      },
+    ];
+
+    const dataDiscoverProduct = [
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/pdp%202023/pdp%20thumbnail%202023/1%20front%20packshot%201.webp?rx=-2147483648&ry=0&rw=-2147483648&rh=0&mw=-2147483648&hash=E50A1F5C082AC50437F8F20376FF2820",
+        name: "Antiseptik Pembersih Luka 40ml",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/pdp%202023/pdp%20thumbnail%202023/9%20thumbnail%20front%20packshot.webp?rx=-2147483648&ry=0&rw=-2147483648&rh=0&mw=-2147483648&hash=0E14F647ADEBB61A5C478439B9E59A1F",
+        name: "Kain Elastis 10 Lembar",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/pdp%202023/pdp%20thumbnail%202023/13%20thumbnail%20front%20packshot.webp?rx=-2147483648&ry=0&rw=-2147483648&rh=0&mw=-2147483648&hash=DADEF4096E76C8EF3D33358E19DEB2F5",
+        name: "MARVEL 10 Lembar",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/pdp%202023/pdp%20thumbnail%202023/25%20thumbnail%20front%20packshot.webp?rx=-2147483648&ry=0&rw=-2147483648&rh=0&mw=-2147483648&hash=ECF3E19FCFEE723385A4AEF80B8347C3",
+        name: "Rol Kain 1,25cm x 5m",
+      },
+    ];
+
+    const dataArticleProduct = [
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/new%20banner%202023/header%20banner%20artikel/artikle_2_desktop.webp?rx=0&ry=0&rw=701&rh=469&mw=350&hash=B1936B9C7B89EC1601263C61952161AD",
+        name: "Cara Perawatan Luka Bernanah agar Tidak Semakin Parah",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/new%20banner%202023/header%20banner%20artikel/artikle_7_desktop.webp?rx=0&ry=0&rw=701&rh=469&mw=350&hash=F2E84310B9D64B403C6C740778506F80",
+        name: "Apa yang harus dilakukan saat jari terjepit dan bengkak",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/new%20banner%202023/header%20banner%20artikel/artikle_3_desktop.webp?rx=0&ry=0&rw=701&rh=469&mw=350&hash=932674EADF721512E93E67FC627B4704",
+        name: "5 Cara Tepat Mengobati Luka Teriris Pisau",
+      },
+      {
+        image:
+          "https://images-as.eucerin.com/~/media/hansaplast/local/id/article/1billionstips/shutterstock_228205096.webp?rx=25&ry=0&rw=5158&rh=3456&mw=350&hash=86007F6DD745E1F60974CCC76854638C",
+        name: "Merawat Luka Terbuka Tak Boleh Sembarangan",
+      },
+    ];
+
+    const newProductElementSection = document.querySelector("#__new-pr-group");
+    const discoverProductElementSection = document.querySelector(
+      "#__discover-pr-group"
+    );
+    const articleElementSection = document.querySelector("#__article-group");
+
+    const newProductContainer = dataNewProduct.map(
+      (el) => `
+        <div class="w-[289px] h-[428px] cursor-pointer hover:shadow-lg border transition">
+          <img
+            src="${el.image}"
+            alt="new-pr"
+            class="w-full mb-10"
+          />
+          <div class="mt-5 px-2">
+            <p class="text-sm text-[#223341]">PERAWATAN LUKA</p>
+            <p class="text-[#001a72] font-medium mt-1">
+              ${el.name}
+            </p>
+          </div>
+        </div>
+    `
+    );
+
+    const newDiscoverProductContainer = dataDiscoverProduct.map(
+      (el) => `
+        <div class="w-[289px] h-[428px] cursor-pointer hover:shadow-lg border transition">
+          <img
+            src="${el.image}"
+            alt="new-pr"
+            class="w-full mb-10"
+          />
+          <div class="mt-5 px-2">
+            <p class="text-sm text-[#223341]">PERAWATAN LUKA</p>
+            <p class="text-[#001a72] font-medium mt-1">
+              ${el.name}
+            </p>
+          </div>
+        </div>
+    `
+    );
+
+    const articleContainer = dataArticleProduct.map(
+      (el) => `
+        <div class="w-[289px] h-[340px] cursor-pointer bg-white hover:shadow-lg border transition">
+          <img
+            src="${el.image}"
+            alt="new-pr"
+            class="w-full mb-10"
+          />
+          <div class="mt-5 px-2">
+            <p class="text-[#001a72] font-medium hover:underline">
+              ${el.name}
+            </p>
+            <p class="text-xs decoration-none font-medium text-[#808088] mt-1">3 menit Baca</p>
+          </div>
+        </div>
+    `
+    );
+
+    newProductElementSection.innerHTML = newProductContainer.join("");
+    discoverProductElementSection.innerHTML =
+      newDiscoverProductContainer.join("");
+    articleElementSection.innerHTML = articleContainer.join("");
+  </script>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Bootstrap 5 Validation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <div class="container">
+        <img
+          class="__navbar-container-logo"
+          src="./assets/logo.svg"
+          alt="hansalogo"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-between align-items-center"
+          id="navbarNav"
+        >
+          <div></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link __nav-link-style"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link __nav-link-style" href="./biodata.html"
+                >Biodata</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link __nav-link-style" href="./contact-us.html"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link __nav-link-style" href="https://fti.unai.edu"
+                >Fti UNAI</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link __nav-link-style" href="https://unai.edu"
+                >UNAI Web</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/383px-Flag_of_Indonesia.svg.png"
+                alt="indo-flagg"
+                class="__image-indo-flag"
+              />
+              <span>ID</span>
+            </div>
+            <img
+              id="__search-button"
+              class="__navbar-search-btn"
+              src="./assets/search.svg"
+              alt="search"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="__contact-us-pages">
+      <div class="container">
+        <div
+          class="__card-wrapper d-flex justify-content-center align-items-center py-5"
+        >
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Contact Us</h5>
+
+              <form id="myForm" novalidate>
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your first name.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your last name.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your username.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Hobbies</label><br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="hobby1"
+                      value="hobby1"
+                      required
+                    />
+                    <label class="form-check-label" for="hobby1">Soccer</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="hobby2"
+                      value="hobby2"
+                      required
+                    />
+                    <label class="form-check-label" for="hobby2">Sleep</label>
+                  </div>
+                  <div class="invalid-feedback">
+                    Please select at least one hobby.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Religion</label><br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="religion"
+                      id="religion1"
+                      value="religion1"
+                      required
+                    />
+                    <label class="form-check-label" for="religion1"
+                      >Advent</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="religion"
+                      id="religion2"
+                      value="religion2"
+                      required
+                    />
+                    <label class="form-check-label" for="religion2"
+                      >Non Advent</label
+                    >
+                  </div>
+                  <div class="invalid-feedback">
+                    Please select your religion.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="address" class="form-label">Address</label>
+                  <textarea
+                    class="form-control"
+                    id="address"
+                    rows="3"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Please enter your address.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your password.
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary d-block mx-auto mt-3"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="__footer-section container">
+      <div class="d-flex flex-column align-items-center">
+        <img
+          class="__footer-main-logo"
+          src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/hp_purpose_id_100.webp?la=id-ID&h=200&w=200&mw=200&hash=BADD511B41F555B40F6E235C9D91F4A0"
+          alt="footer-mainlogo"
+        />
+        <div class="__list-sosmed-logo">
+          <img src="./assets/youtube.svg" alt="youtube-logo" />
+          <img src="./assets/ig.svg" alt="youtube-logo" />
+          <img src="./assets/fb.svg" alt="youtube-logo" />
+          <img src="./assets/tt.svg" alt="youtube-logo" />
+          <img src="./assets/wa.svg" alt="youtube-logo" />
+        </div>
+        <div class="__list-footer-navigation">
+          <a href="https://www.hansaplast.id/pages/kontak">KONTAK</a>
+          <a href="https://www.hansaplast.id/pages/persyaratan-penggunaan"
+            >PERSYARATAN PENGGUNAAN</a
+          >
+          <a href="https://www.hansaplast.id/pages/jejak">JEJAK</a>
+          <a href="https://www.hansaplast.id/pages/kebijakan-privasi"
+            >KEBIJAKAN PRIVASI</a
+          >
+        </div>
+      </div>
+      <div class="__sc-footer __layout">
+        <p>
+          Selalu kunjungi dokter jika Anda menderita luka dalam, pendarahan
+          hebat, atau menunjukkan gejala infeksi seperti kulit kemerahan,
+          bengkak, atau terasa hangat. Perlu diingat bahwa meskipun telah
+          disusun dengan baik, tips-tips ini tidak bermaksud untuk mengganti
+          saran atau tindakan medis. Jika Anda memiliki atau merasa ada masalah
+          kesehatan, konsultasikan kepada dokter dan ikuti saran medis tanpa
+          mempedulikan apa yang sudah Anda pelajari dari situs web ini. Selalu
+          baca dan ikuti instruksi atau brosur produk kami dengan baik.
+        </p>
+        <p>
+          Untuk informasi lebih lanjut, silakan hubungi kami melalui Nomor Bebas
+          Pulsa: 0800-11-64832.
+        </p>
+        <p>
+          Perlu diingat bahwa meskipun telah disusun dengan baik, tips-tips ini
+          tidak bermaksud untuk mengganti saran atau tindakan medis. Jika Anda
+          memiliki atau merasa ada masalah kesehatan, konsultasikan kepada
+          dokter dan ikuti saran medis tanpa mempedulikan apa yang sudah Anda
+          pelajari dari situs web ini. Selalu baca dan ikuti instruksi atau
+          brosur produk kami dengan baik. Untuk informasi lebih lanjut, silakan
+          hubungi kami melalui CustomerCare-id@Beiersdorf.com
+        </p>
+        <hr />
+        <div class="__copyright-footer">
+          <img
+            src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/beiersdorf_logo_blue_rgb-96x16.webp?la=id-ID&h=16&w=96&mw=155&hash=F69B8E6D422526C1548F3CD46442A093"
+            alt="footer-sc-images"
+          />
+          <p>COPYRIGHT 2023 BEIERSDORF</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          var form = event.target;
+
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          form.classList.add("was-validated");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Hansaplast</title>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+          <img
+            class="__navbar-container-logo"
+            src="./assets/logo.svg"
+            alt="hansalogo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-between align-items-center"
+            id="navbarNav"
+          >
+            <div></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link __nav-link-style"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link __nav-link-style" href="./biodata.html"
+                  >Biodata</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link __nav-link-style" href="./contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link __nav-link-style" href="https://fti.unai.edu"
+                  >Fti UNAI</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link __nav-link-style" href="https://unai.edu"
+                  >UNAI Web</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-4">
+              <div class="d-flex align-items-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/383px-Flag_of_Indonesia.svg.png"
+                  alt="indo-flagg"
+                  class="__image-indo-flag"
+                />
+                <span>ID</span>
+              </div>
+              <img
+                id="__search-button"
+                class="__navbar-search-btn"
+                src="./assets/search.svg"
+                alt="search"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="bg-primary">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="__banner-item-carrousel">
+                <div class="__banner-item-carrousel-sec">
+                  <div class="__banner-item-carrousel-title">
+                    <h1>Antipseptik Pembersih Luka Tanpa Rasa Perih</h1>
+                    <p class="__banner-item-carrousel-subtitle">
+                      Hansaplast Antiseptik Pembersih Luka merupakan antiseptik
+                      dengan kandingan PHMB ideal yang memberikan rasa nyaman.
+                    </p>
+                    <button class="__banner-item-carrousel-btn">
+                      Lihat Selengkapnya
+                    </button>
+                  </div>
+                </div>
+                <img
+                  src="https://images-as.eucerin.com/~/media/hansaplast/local/id/home%20-%20splitted%20stage%20-%202023/antiseptik%20pembersih%20luka%20-%20splitted%20stage%20mobile%20png.webp?rx=0&ry=0&rw=1916&rh=960&mw=1200&hash=D6D4E19847B0E0C3A8A067C27CD796D5"
+                  class="__banner-item-image"
+                  alt="banner1"
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="__banner-item-carrousel">
+                <div class="__banner-item-carrousel-sec">
+                  <div class="__banner-item-carrousel-title">
+                    <h1>Kenyamanan Maksimal Untuk Luka Besar</h1>
+                    <p class="__banner-item-carrousel-subtitle">
+                      Melindungi luka dari kotoran dan bakteri, untuk luka yang
+                      lebih besar & pasca operasi.
+                    </p>
+                    <button class="__banner-item-carrousel-btn">
+                      Lihat Selengkapnya
+                    </button>
+                  </div>
+                </div>
+                <img
+                  src="https://images-as.eucerin.com/~/media/hansaplast/local/id/new%20banner%202023/frame%208494.webp?rx=0&ry=0&rw=1917&rh=960&mw=1200&hash=6A2F88942FFDA44F391FFCFFEC294FCB"
+                  class="__banner-item-image"
+                  alt="banner1"
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="__banner-item-carrousel">
+                <div class="__banner-item-carrousel-sec">
+                  <div class="__banner-item-carrousel-title">
+                    <h1>Sembuhkan 2x lebih cepat*</h1>
+                    <p class="__banner-item-carrousel-subtitle">
+                      Hansaplast Salep Luka merupakan salep serbaguna untuk
+                      perawatan luka dan kulit yang rusak.
+                    </p>
+                    <button class="__banner-item-carrousel-btn">
+                      Lihat Selengkapnya
+                    </button>
+                  </div>
+                </div>
+                <img
+                  src="https://images-1.eucerin.com/~/media/hansaplast/local/id/home%20-%20splitted%20stage%20-%202023/salep%20luka%20-%20splitted%20stage%20mobile%20png.webp?rx=0&ry=0&rw=1917&rh=960&mw=1200&hash=ADC50AA03F8C52CECED3692FC37A9AD6"
+                  class="__banner-item-image"
+                  alt="banner1"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="container d-flex justify-content-center">
+        <div class="__branding-sec">
+          <p class="__branding-container-title">Selamat datang di Hansaplast</p>
+          <p class="__branding-container-subtitle">
+            Jika Anda mencari berbagai produk pertolongan pertama seperti
+            <span>Antiseptik Pembersih Luka</span>, <span>Plester Luka</span>,
+            <span>Salep Luka</span> atau <span>Koyo Pereda Nyeri</span>, maka
+            Anda berada di tempat yang tepat. Hansaplast adalah ahlinya
+            pertolongan pertama! Di sini, Anda akan menemukan produk-produk
+            inovatif dan artikel berisikan tips and trik untuk membuat perawatan
+            diri menjadi lebih mudah dan efektif.
+          </p>
+        </div>
+      </section>
+      <div class="__main-product-container">
+        <div class="__main-product-section container">
+          <h2>Jelajahi Hansaplast</h2>
+          <div
+            class="__product-list-container d-flex flex-column flex-lg-row align-items-center justify-content-between"
+          >
+            <div class="__product-card">
+              <img
+                src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/teaser-images/salep-luka-teaser.webp?rx=0&ry=0&rw=960&rh=960&mw=350&hash=31921845B7C7BA538383A7B75C8A0254"
+                alt="salep-luka"
+              />
+              <div class="__product-detail">
+                <p>Perawatan Luka</p>
+                <p>Salep Luka 20g</p>
+                <div>
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+            <div class="__product-card">
+              <img
+                src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/antiseptik-40ml/01_front_packshot.webp?rx=0&ry=0&rw=960&rh=960&mw=350&hash=10E18CD658F3185124B15FEF2D2257C8"
+                alt="salep-luka"
+              />
+              <div class="__product-detail">
+                <p>Perawatan Luka</p>
+                <p>Antiseptik Pembersih Luka 40ml</p>
+                <div>
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+            <div class="__product-card">
+              <img
+                src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/teaser-images/marvel-teaser.webp?rx=0&ry=0&rw=960&rh=960&mw=350&hash=6571A236C99006AB874EA262694458F0"
+                alt="salep-luka"
+              />
+              <div class="__product-detail">
+                <p>Perawatan Luka</p>
+                <p>MARVEL 10 Lembar</p>
+              </div>
+            </div>
+            <div class="__product-card">
+              <img
+                src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/koyo-hangat-10s/koyo-hangat-10s-01-front.webp?rx=0&ry=0&rw=960&rh=960&mw=350&hash=6FDDE18A5B007B1625D649749080B9EB"
+                alt="salep-luka"
+              />
+              <div class="__product-detail">
+                <p>Nyeri Otot</p>
+                <p>Koyo Hangat 10 Lembar</p>
+                <div>
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <img src="./assets/star.svg" alt="star-image" />
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="__list-product-btn-see-all">
+            <button>Lihat Produk Hansaplast</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="__discover-container">
+      <div class="__main-product-section container">
+        <h2>Artikel</h2>
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-between mb-5"
+        >
+          <div class="__discover-card">
+            <img
+              src="https://images-as.eucerin.com/~/media/hansaplast/local/id/article/perawatan-luka-ala-hansaplast/membersihkan-luka/menyembuhkan-luka.webp?rx=732&ry=0&rw=716&rh=480&mw=350&hash=4BE1B51599EB4D82DBED5B26F152450B"
+              alt="-discover-images"
+            />
+            <div class="__discover-detail-card">
+              <p>ARTIKEL</p>
+              <p>Menyembuhkan Luka</p>
+              <p>2 menit Baca</p>
+            </div>
+          </div>
+          <div class="__discover-card">
+            <img
+              src="https://images-as.eucerin.com/~/media/hansaplast/local/id/article/perawatan-luka-ala-hansaplast/membersihkan-luka/menyembuhkan-luka.webp?rx=732&ry=0&rw=716&rh=480&mw=350&hash=4BE1B51599EB4D82DBED5B26F152450B"
+              alt="-discover-images"
+            />
+            <div class="__discover-detail-card">
+              <p>ARTIKEL</p>
+              <p>Perawatan Luka yang Tepat dengan Hansaplast</p>
+              <p>2 menit Baca</p>
+            </div>
+          </div>
+          <div class="__discover-card">
+            <img
+              src="https://images-as.eucerin.com/~/media/hansaplast/local/id/article/perawatan-luka-ala-hansaplast/membersihkan-luka/menyembuhkan-luka.webp?rx=732&ry=0&rw=716&rh=480&mw=350&hash=4BE1B51599EB4D82DBED5B26F152450B"
+              alt="-discover-images"
+            />
+            <div class="__discover-detail-card">
+              <p>ARTIKEL</p>
+              <p>Perlindungan Luka</p>
+              <p>3 menit Baca</p>
+            </div>
+          </div>
+          <div class="__discover-card">
+            <img
+              src="https://images-as.eucerin.com/~/media/hansaplast/local/id/article/perawatan-luka-ala-hansaplast/membersihkan-luka/menyembuhkan-luka.webp?rx=732&ry=0&rw=716&rh=480&mw=350&hash=4BE1B51599EB4D82DBED5B26F152450B"
+              alt="-discover-images"
+            />
+            <div class="__discover-detail-card">
+              <p>ARTIKEL</p>
+              <p>Membersihkan Luka</p>
+              <p>2 menit Baca</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="__footer-section container">
+      <div class="d-flex flex-column align-items-center">
+        <img
+          class="__footer-main-logo"
+          src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/hp_purpose_id_100.webp?la=id-ID&h=200&w=200&mw=200&hash=BADD511B41F555B40F6E235C9D91F4A0"
+          alt="footer-mainlogo"
+        />
+        <div class="__list-sosmed-logo">
+          <img src="./assets/youtube.svg" alt="youtube-logo" />
+          <img src="./assets/ig.svg" alt="youtube-logo" />
+          <img src="./assets/fb.svg" alt="youtube-logo" />
+          <img src="./assets/tt.svg" alt="youtube-logo" />
+          <img src="./assets/wa.svg" alt="youtube-logo" />
+        </div>
+        <div class="__list-footer-navigation">
+          <a href="https://www.hansaplast.id/pages/kontak">KONTAK</a>
+          <a href="https://www.hansaplast.id/pages/persyaratan-penggunaan"
+            >PERSYARATAN PENGGUNAAN</a
+          >
+          <a href="https://www.hansaplast.id/pages/jejak">JEJAK</a>
+          <a href="https://www.hansaplast.id/pages/kebijakan-privasi"
+            >KEBIJAKAN PRIVASI</a
+          >
+        </div>
+      </div>
+      <div class="__sc-footer __layout">
+        <p>
+          Selalu kunjungi dokter jika Anda menderita luka dalam, pendarahan
+          hebat, atau menunjukkan gejala infeksi seperti kulit kemerahan,
+          bengkak, atau terasa hangat. Perlu diingat bahwa meskipun telah
+          disusun dengan baik, tips-tips ini tidak bermaksud untuk mengganti
+          saran atau tindakan medis. Jika Anda memiliki atau merasa ada masalah
+          kesehatan, konsultasikan kepada dokter dan ikuti saran medis tanpa
+          mempedulikan apa yang sudah Anda pelajari dari situs web ini. Selalu
+          baca dan ikuti instruksi atau brosur produk kami dengan baik.
+        </p>
+        <p>
+          Untuk informasi lebih lanjut, silakan hubungi kami melalui Nomor Bebas
+          Pulsa: 0800-11-64832.
+        </p>
+        <p>
+          Perlu diingat bahwa meskipun telah disusun dengan baik, tips-tips ini
+          tidak bermaksud untuk mengganti saran atau tindakan medis. Jika Anda
+          memiliki atau merasa ada masalah kesehatan, konsultasikan kepada
+          dokter dan ikuti saran medis tanpa mempedulikan apa yang sudah Anda
+          pelajari dari situs web ini. Selalu baca dan ikuti instruksi atau
+          brosur produk kami dengan baik. Untuk informasi lebih lanjut, silakan
+          hubungi kami melalui CustomerCare-id@Beiersdorf.com
+        </p>
+        <hr />
+        <div class="__copyright-footer">
+          <img
+            src="https://images-as.eucerin.com/~/media/hansaplast/local/id/2022-images/beiersdorf_logo_blue_rgb-96x16.webp?la=id-ID&h=16&w=96&mw=155&hash=F69B8E6D422526C1548F3CD46442A093"
+            alt="footer-sc-images"
+          />
+          <p>COPYRIGHT 2023 BEIERSDORF</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
